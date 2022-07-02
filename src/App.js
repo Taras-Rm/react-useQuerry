@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { QueryClient, QueryClientProvider, useMutation } from 'react-query';
+import { createUser } from './api/api';
 import './App.css';
+import CreateUser from './createUser/CreateUser';
+import UsersBox from './usersBox/UsersBox.js';
+
+const queryClient = new QueryClient();
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="app">
+        <UsersBox />
+        <CreateUser />
+      </div>
+    </QueryClientProvider>
   );
 }
 

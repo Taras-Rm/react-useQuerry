@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.app {
+  background-color: rgb(82, 37, 5);
+  height: 100vh;
+  color: white;
+  padding-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.usersBox {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto 40px auto;
+  max-width: 400px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.user{
+  border: 1px solid white;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user:last-child{
+  margin-bottom: 0px;
+}
+
+.user_item{
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.user_item:last-child {
+  margin-bottom: 0;
+}
+
+.user_item__category {
+  display:flex;
+  width: 70px;
+}
+
+.createUser {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  
+}
+
+.createUser_header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.createUser_input {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 8px;
+}
+
+.createUser_input__item {
+  width: 80px;
+  font-size: 20px;
+}
+
+.createUser__name, .createUser__age, .createUser__car {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
   color: white;
+  font-size: 20px;
+  padding: 0 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.createUser_btn, .user_deleteBtn {
+  display: block;
+  width: 50%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+  transition: .5s all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.createUser_btn:hover, .user_deleteBtn:hover {
+  border: none;
+  background-color: rgb(117, 53, 6);
 }

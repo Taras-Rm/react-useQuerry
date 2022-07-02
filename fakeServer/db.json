@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Taras",
+      "age": 21,
+      "car": "Volkswagen GTI"
+    },
+    {
+      "id": 2,
+      "name": "Ira",
+      "age": 20,
+      "car": "Mini Couper"
+    },
+    {
+      "id": 3,
+      "name": "Vitalii",
+      "age": 23,
+      "car": "Mercedes Benz"
+    },
+    {
+      "id": 4,
+      "name": "Tom",
+      "age": 28,
+      "car": "BMW"
+    },
+    {
+      "name": "Riki",
+      "age": "22",
+      "car": "Opel",
+      "id": 5
+    }
+  ]
+}
